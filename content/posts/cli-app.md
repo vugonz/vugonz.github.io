@@ -176,7 +176,7 @@ func LoadConfig(cfg *Config) error {
 	}
 }
 ```
-Golang reflection has two main types, `Value` and `Type`. I won't pretend to understand it deeply, but the idea here is quite simple. We iterate through each field in our Configuration struct and, if the field value is not set, we save its' name and its' `env` tag. Later we will load the values into the fields using `os.LookupEnv(tag)`.
+Golang reflection has two main types, `Value` and `Type`. I won't pretend to understand it deeply, but the idea here is quite simple. We iterate through each field in our Configuration struct and, if the field value is not set, we save its name and its `env` tag. Later we will load the values into the fields using `os.LookupEnv(tag)`.
 This clearly doesn't allow for generic configurations, we are only loading strings, but it suffices for our use case! To achieve a more generic configuration parser you will need even messier reflection! I have written a Bencode parser that requires a bit more care, you can [check it here. 📁](https://github.com/vugonz/bencode)
 
-**Observation**: This is a simplification, CLI arguments can also load the configuration, and these overwrite the file and environment ones, the snippet above also doesn't take into account loading the configuration from the file.
+**Observation**: CLI arguments can also load the configuration, and these overwrite the file and environment ones, the snippet above also doesn't take into account loading the configuration from the file.
