@@ -1,4 +1,4 @@
-baseURL = "https://blog.vugonz.xyz"
+baseURL = "https://vugonz.xyz"
 languageCode = "en-us"
 title = "vugonz"
 theme="archie"
@@ -13,6 +13,11 @@ pygmentscodefencesguesssyntax = true
 	subtitle = "Welcome to my blog, hope you enjoy my funky writing abilities."
 
 [[params.social]]
+name = "Curriculum Vitae"
+icon = "user"
+url = "https://cv.vugonz.xyz"
+
+[[params.social]]
 name = "GitHub"
 icon = "github"
 url = "https://github.com/vugonz"
@@ -21,11 +26,6 @@ url = "https://github.com/vugonz"
 name = "Email"
 icon = "mail"
 url = "mailto:goncalo.r.azevedo@tecnico.ulisboa.pt"
-
-# [[params.social]]
-# name = "GitLab"
-# icon = "gitlab"
-# url = "https://gitlab.com/athul/"
 
 [[menu.main]]
 name = "Home"

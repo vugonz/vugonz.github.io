@@ -3,7 +3,7 @@ date: 2025-01-07T00:18:00Z
 author: "Gonçalo"
 title: "Estágio HS-API"
 description: Tasks para o estágio na HS-API 
-draft: false
+draft: true
 toc: true
 ---
 
