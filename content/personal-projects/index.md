@@ -14,11 +14,11 @@ Here is a video of the leecher downloading the Debian ISO.
 
 **Tools**: Python, asyncio, Go
 
-- [PyBT (leecher)]()
+- [PyBT (leecher)](https://github.com/vugonz/pybt)
 - [tracker](https://github.com/vugonz/tracker)
-- [mktorrent-py]()
-- [bencode-py]()
-- [bencode-go]()
+- [mktorrent-py](https://github.com/vugonz/mktorrent-py)
+- [bencode-py](https://github.com/vugonz/bencode-py)
+- [bencode-go](https://github.com/vugonz/bencode)
 
 ## Crawler
 A little program I use to backup file servers over HTTP. Once the first backup is made the program keeps track of resources' last modified state and attempts to save as much bandwidth as possible on each run, much like git that only downloads the difference on pull. One downside of the current approach is that the metadata, which is stored in the filesystem, tends to eat up some space.
